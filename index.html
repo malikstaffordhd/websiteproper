@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik's Website 2</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/54d1f03b78.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="s2.png" class="logo" width= 120 >
+            <ul id= "sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class = "header-text">
+            <p> Undergraduate Student/Budding Engineer, Data Scientist, Analyst and Programmer </p>
+            <h1> I'm <span>Malik Stafford </span></h1>
+        </div>
+    </div>
+</div>
+<!---about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="SelfImage.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class ="sub-title">About Me</h1>
+                <p><br>To build valuable experience in the modern work environment while advancing my education and training in Engineering and Computer Science. I enjoy spending time with my family, watching sports and playing video games with my friends.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick= "opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Microsoft Suite Proficiency</span><br>Excel, Powerpoint and Word</li>
+                        <li><span>3D Modelling and Printing</span><br>Working knowledge of SolidWorks, AutoCAD and Fusion360</li>
+                        <li><span>Data Analysis and Visualization</span><br>Working Knowledge of SQL, R Programming Language, Python and Tableau</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id= "experience">
+                    <ul>
+                        <li><span>11/2023 - Present</span><br>Sales Associate at Sherwin-Williams</li>
+                        <li><span>08/2023 - 10/2023</span><br>Projects Assistant at Access Records Management</li>
+                        <li><span>06/20220 - 08/2022</span><br>Vacation Employee at T&TEC</li>
+                        <li><span>01/2022 - 03/2022</span><br>Baker at SuperPharm Ltd</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Current</span><br>BSc in Mechanical Engineering from the University of the West Indies</li>
+                        <li><span>2020</span><br>CAPE Diploma at Queen's Royal College</li>
+                        <li><span>2018</span><br>CSEC Diploma at Queen's Royal College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------services-------------->
+
+<div id ="hobbies">
+    <div class="container">
+        <h1 class ="sub-title">Skills and Hobbies</h1>
+        <div class="hobbies-list">
+            <div>
+                <i class="fa-solid fa-cubes"></i>
+                <h2>3D Printing</h2>
+                <p>Using CAD software to bring models to life.</p>
+                <a href="https://3dprinting.com/what-is-3d-printing/"><br>Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-person-hiking"></i>
+                <h2>Hiking</h2>
+                <p>Exploring the great outdoors!</p>
+                <!--<a href="#"><br>Learn more</a>--->
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data Analysis</h2>
+                <p>Using Programming languages and software to identify trends in data.</p>
+                <a href="https://www.coursera.org/articles/what-is-data-analysis-with-examples"><br>Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class ="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="3Dsolo.jpg">
+                <div class = "layer">
+                    <h3>3D Printing Showcase</h3>
+                    <p> Things that I have printed and displayed</p>
+                    <a href = "https://drive.google.com/drive/folders/1qu11Yc7ZLGh1Nf9NGLFaQGB3b1ZJ6l6u?usp=drive_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Analysis.jpg">
+                <div class = "layer">
+                    <h3>Capstone Analytics Project</h3>
+                    <p> Using R Programming language to analyse a data set</p>
+                    <a href = "https://www.kaggle.com/code/malikstafford/capstoneproject-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="HikePhoto.JPG">
+                <div class = "layer">
+                    <h3>Hiking Adventures</h3>
+                    <p> Places around Trinidad that I've been to</p>
+                    <a href = "https://drive.google.com/drive/folders/1NPh_eG3q4TMIZErhdE0eX5KCE0tMw8V3?usp=drive_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--<a href="#" class="btn"> See more</a>--->
+    </div>
+</div>
+
+<!-------------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> mstaffordpro@outlook.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 1-868-710987</p>
+                <div class="social-icons">
+                    <a href = "https://www.linkedin.com/in/malik-stafford-6412871a9/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="MalikResume_April2024.pdf" download class = "btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder = "Your Name" required>
+                    <input type="email" name="Email" placeholder = "Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class = "copyright">
+        <p>Made by Malik</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVZuugnRu6K_pBAOjoXe8X2ouy-Dhn6Nkr62ichg8izAXoijLaXRlAO-VdWbXT_Sy6/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { 
+        method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },500)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
